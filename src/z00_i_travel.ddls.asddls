@@ -16,6 +16,8 @@ define view Z00_I_Travel
       stdat     as StartDate,
       enddat    as EndDate,
       status    as Status,
+      @Semantics.systemDateTime.lastChangedAt: true
       changedat as ChangedAt,
+      @Semantics.user.lastChangedBy: true
       changedby as ChangedBy
 }

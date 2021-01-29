@@ -6,7 +6,9 @@
 "Z00_I_CARRIER"
 ],
 "ASSOCIATED":
-[],
+[
+"Z00_I_CONNECTIONTP"
+],
 "BASE":
 []
 }

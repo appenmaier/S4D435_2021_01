@@ -23,7 +23,8 @@ annotate view Z00_C_TravelTP with
 
   @UI: {
          lineItem:       [ { position: 20, importance: #HIGH } ],
-         identification: [ { position: 30, importance: #HIGH } ]
+         identification: [ { position: 30, importance: #HIGH } ],
+         lineItem: [{ type: #FOR_ACTION, dataAction: 'BOPF:SET_TO_CANCELLED', label: 'Cancel the Travel' }]
        }
 
   TravelDescription;

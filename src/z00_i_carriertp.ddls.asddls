@@ -20,9 +20,14 @@
 }
 define view Z00_I_CarrierTP
   as select from Z00_I_Carrier
+  association [*] to Z00_I_ConnectionTP as _Connections on $projection.CarrierId = _Connections.CarrierId
 {
   key CarrierId,
+      @ObjectModel.mandatory: true
       CarrierName,
       CurrencyCode,
-      URL
+      @ObjectModel.readOnly: true
+      URL,
+      @ObjectModel.association.type: [#TO_COMPOSITION_CHILD]
+      _Connections
 }

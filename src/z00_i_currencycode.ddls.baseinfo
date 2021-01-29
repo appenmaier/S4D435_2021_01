@@ -3,12 +3,10 @@
 {
 "FROM":
 [
-"Z00_I_TRAVELTP"
+"TCURC"
 ],
 "ASSOCIATED":
-[
-"D435_I_CUSTOMER"
-],
+[],
 "BASE":
 []
 }

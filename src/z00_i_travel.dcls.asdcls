@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access Control: Travel'
+@MappingRole: true
+define role Z00_I_TRAVEL {
+    grant select on Z00_I_Travel
+     where (TravelAgency) = aspect pfcg_auth(S_AGENCY, AGENCYNUM, ACTVT = '03');
+                        
+}
